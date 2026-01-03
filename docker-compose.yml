@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  speedtest:
+    build: .
+    container_name: network_speedtest
+    restart: unless-stopped
+    volumes:
+      # 將資料持久化到主機
+      - ./speedtest_results.csv:/app/speedtest_results.csv
+      - ./logs:/app/logs
+      - ./charts:/app/charts
+    environment:
+      - TZ=Asia/Taipei
+    # 如果需要使用 .env 檔案，取消下面這行註解
+    # env_file:
+    #   - .env

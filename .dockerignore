@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# 虛擬環境
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 測試與日誌
+*.log
+logs/*.log
+speedtest_results.csv
+charts/*.png
+
+# Git
+.git/
+.gitignore
+
+# Docker
+.dockerignore
+Dockerfile
+
+# 環境變數檔案
+.env
+.env.local
+
+# 作業系統
+.DS_Store
+Thumbs.db
