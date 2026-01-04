@@ -147,11 +147,6 @@ docker-compose down
 - 錯誤訊息和除錯資訊
 - 按日期輪替
 
-## 系統需求
-
-- Python 3.8 或更高版本
-- 或 Docker + Docker Compose
-
 ## 依賴套件
 
 - `speedtest-cli` - 網速測試
@@ -178,18 +173,4 @@ docker-compose down
 2. 確保有足夠的測試記錄（至少 1 筆）
 3. 檢查 `charts/` 目錄是否有寫入權限
 
-### Docker 相關問題
 
-請參考 [README_DOCKER.md](README_DOCKER.md) 中的疑難排解章節。
-
-## 授權
-
-MIT License
-
-## 貢獻
-
-歡迎提交 Issue 或 Pull Request！
-
-## 聯絡資訊
-
-如有任何問題或建議，請開啟 Issue 討論。

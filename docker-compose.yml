@@ -1,13 +1,10 @@
-version: '3.8'
-
 services:
   speedtest:
     image: ghcr.io/jebylinjbjob/network_test:latest
     container_name: network_speedtest
     restart: unless-stopped
     volumes:
-      # 將資料持久化到主機
-      - ./speedtest_results.csv:/app/speedtest_results.csv
+      - .:/app/data
       - ./logs:/app/logs
       - ./charts:/app/charts
     environment:
