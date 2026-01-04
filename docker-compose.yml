@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   speedtest:
-    build: .
+    image: ghcr.io/jebylinjbjob/network_test:latest
     container_name: network_speedtest
     restart: unless-stopped
     volumes:
